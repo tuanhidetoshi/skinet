@@ -37,7 +37,7 @@ namespace Infrastructure.Data
 
         public async Task<IReadOnlyList<ProductType>> GetProductTypesAsync()
         {
-            throw new System.NotImplementedException();
+            return await _context.ProductTypes.ToListAsync();
         }
     }
 }
